@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="plugin-moonwave plugin-id-moonwave">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v2.3.1">
+<title data-rh="true">ReactTree | ReactTree</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://howmanysmall.github.io/ReactTree/api/ReactTree"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="ReactTree | ReactTree"><meta data-rh="true" name="description" content="A utility library that allows Roact styled mounting and unmounting for React."><meta data-rh="true" property="og:description" content="A utility library that allows Roact styled mounting and unmounting for React."><link data-rh="true" rel="canonical" href="https://howmanysmall.github.io/ReactTree/api/ReactTree"><link data-rh="true" rel="alternate" href="https://howmanysmall.github.io/ReactTree/api/ReactTree" hreflang="en"><link data-rh="true" rel="alternate" href="https://howmanysmall.github.io/ReactTree/api/ReactTree" hreflang="x-default"><link rel="stylesheet" href="/ReactTree/assets/css/styles.fdfd902f.css">
+<link rel="preload" href="/ReactTree/assets/js/runtime~main.4d7f075f.js" as="script">
+<link rel="preload" href="/ReactTree/assets/js/main.e64a2d69.js" as="script">
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
+<div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ReactTree/"><b class="navbar__title text--truncate">ReactTree</b></a><a class="navbar__item navbar__link" href="/ReactTree/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ReactTree/api/">API</a><a class="navbar__item navbar__link" href="/ReactTree/changelog">Changelog</a></div><div class="navbar__items navbar__items--right"><a href="https://discord.gg/nhDpg96Srt" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/howmanysmall/ReactTree" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/ReactTree/api/ReactTree">​React​Tree</a></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">React</span><span style="display:inline-block">Tree</span></h1><div class="luaClassTags_EipM"></div><div>
+<p>A utility library that allows Roact styled mounting and unmounting for React.</p>
+</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="IReactHandle"><code style="text-decoration:none">IReactHandle</code><a href="#IReactHandle" class="hash-link" aria-label="Direct link to IReactHandle" title="Direct link to IReactHandle">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/howmanysmall/ReactTree/blob/main/src/init.lua#L35"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>IReactHandle<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>key<!-- -->: </code><code class="blue_P4bS">number</code><code class="op_lSLc"> | </code><code class="blue_P4bS">string</code><span class="inlineDescription_G7Er">-- <span>
+<p>The key of the element.</p>
+</span></span></div><div><code>parent<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance?<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The parent of the element.</p>
+</span></span></div><div><code>root<!-- -->: </code><code class="blue_P4bS">any</code><span class="inlineDescription_G7Er">-- <span>
+<p>The root of the element. This is the return result of <code>React.createElement</code>.</p>
+</span></span></div></div><code>}</code></div><div>
+<p>
+  This is what is returned when you call <a href="/ReactTree/api/ReactTree#mount">ReactTree.mount</a>, and it
+  is used for unmounting with <a href="/ReactTree/api/ReactTree#unmount">ReactTree.unmount</a>.
+</p>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="StrictValidation"><code style="text-decoration:none">StrictValidation</code><a href="#StrictValidation" class="hash-link" aria-label="Direct link to StrictValidation" title="Direct link to StrictValidation">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/howmanysmall/ReactTree/blob/main/src/init.lua#L23"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ReactTree<!-- -->.<!-- -->StrictValidation<!-- -->:<!-- --> </code> <code class="blue_P4bS">boolean</code></div><div>
+<p>Whether or not to perform strict validation on the React tree.</p>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mount"><code style="text-decoration:none">mount</code><a href="#mount" class="hash-link" aria-label="Direct link to mount" title="Direct link to mount">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/howmanysmall/ReactTree/blob/main/src/init.lua#L55"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ReactTree<!-- -->.</code><code class="green_DgR4">mount</code><code>(</code><div class="inset_uKQm"><div><code>element<!-- -->: </code><code class="blue_P4bS">any</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>The React element to mount. This is the return result of <code>React.createElement</code>.</p>
+</span></span></div><div><code>parent?<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>Where you want to mount the tree to.</p>
+</span></span></div><div><code>key?<!-- -->: </code><code class="blue_P4bS">string</code><span class="inlineDescription_G7Er">-- <span>
+<p>The key of the element. Essentially just <a href="https://developer.roblox.com/en-us/api-reference/datatype/Instance#Name" target="_blank">Instance.Name</a>.</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/ReactTree/api/ReactTree#IReactHandle">IReactHandle</a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The handle to the mounted element.</p>
+</span></span></div><div>
+<p>Used to mount a React element into the Roblox instance tree.</p>
+<p>
+  Creates a Roblox Instance given a Roact element, and optionally a
+  <code>parent</code> to put it in, and a <code>key</code> to use as the instance's <code>Name</code>.
+</p>
+<p>
+  The return result is an <a href="/ReactTree/api/ReactTree#IReactHandle">IReactHandle</a>, which can be used to unmount
+  the element later using <a href="/ReactTree/api/ReactTree#unmount">ReactTree.unmount</a>.
+</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="unmount"><code style="text-decoration:none">unmount</code><a href="#unmount" class="hash-link" aria-label="Direct link to unmount" title="Direct link to unmount">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/howmanysmall/ReactTree/blob/main/src/init.lua#L116"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ReactTree<!-- -->.</code><code class="green_DgR4">unmount</code><code>(</code><div class="inset_uKQm"><div><code>reactHandle<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/ReactTree/api/ReactTree#IReactHandle">IReactHandle</a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The handle to unmount.</p>
+</span></span></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Unmounts an element that was mounted with <a href="/ReactTree/api/ReactTree#mount">ReactTree.mount</a>.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="update"><code style="text-decoration:none">update</code><a href="#update" class="hash-link" aria-label="Direct link to update" title="Direct link to update">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/howmanysmall/ReactTree/blob/main/src/init.lua#L145"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ReactTree<!-- -->.</code><code class="green_DgR4">update</code><code>(</code><div class="inset_uKQm"><div><code>reactHandle<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/ReactTree/api/ReactTree#IReactHandle">IReactHandle</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>The handle to update.</p>
+</span></span></div><div><code>element<!-- -->: </code><code class="blue_P4bS">any</code><span class="inlineDescription_G7Er">-- <span>
+<p>The new element to update the handle with. This is the return result of <code>React.createElement</code>.</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/ReactTree/api/ReactTree#IReactHandle">IReactHandle</a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The same handle that was passed in.</p>
+</span></span></div><div>
+<p>
+  Updates an existing instance handle with a new element, returning
+  the same handle. This can be used to update a UI created with
+  <a href="/ReactTree/api/ReactTree#mount">ReactTree.mount</a> by passing in a new element with new props.
+</p>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      This is really not recommended to use, it's extremely slow
+      and can cause major performance issues. Find a better way
+      to handle your trees.
+    </p>
+  </div>
+</div>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;mount&quot;,
+            &quot;desc&quot;: &quot;Used to mount a React element into the Roblox instance tree.\n\nCreates a Roblox Instance given a Roact element, and optionally a\n`parent` to put it in, and a `key` to use as the instance&#x27;s `Name`.\n\nThe return result is an [IReactHandle], which can be used to unmount\nthe element later using [ReactTree.unmount].&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;element&quot;,
+                    &quot;desc&quot;: &quot;The React element to mount. This is the return result of `React.createElement`.&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;parent?&quot;,
+                    &quot;desc&quot;: &quot;Where you want to mount the tree to.&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;key?&quot;,
+                    &quot;desc&quot;: &quot;The key of the element. Essentially just [Instance.Name].&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;The handle to the mounted element.&quot;,
+                    &quot;lua_type&quot;: &quot;IReactHandle&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 55,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;unmount&quot;,
+            &quot;desc&quot;: &quot;Unmounts an element that was mounted with [ReactTree.mount].&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;reactHandle&quot;,
+                    &quot;desc&quot;: &quot;The handle to unmount.&quot;,
+                    &quot;lua_type&quot;: &quot;IReactHandle&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 116,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;update&quot;,
+            &quot;desc&quot;: &quot;Updates an existing instance handle with a new element, returning\nthe same handle. This can be used to update a UI created with\n[ReactTree.mount] by passing in a new element with new props.\n\n:::warning\nThis is really not recommended to use, it&#x27;s extremely slow\nand can cause major performance issues. Find a better way\nto handle your trees.\n:::&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;reactHandle&quot;,
+                    &quot;desc&quot;: &quot;The handle to update.&quot;,
+                    &quot;lua_type&quot;: &quot;IReactHandle&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;element&quot;,
+                    &quot;desc&quot;: &quot;The new element to update the handle with. This is the return result of `React.createElement`.&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;The same handle that was passed in.&quot;,
+                    &quot;lua_type&quot;: &quot;IReactHandle&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 145,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;StrictValidation&quot;,
+            &quot;desc&quot;: &quot;Whether or not to perform strict validation on the React tree.&quot;,
+            &quot;lua_type&quot;: &quot;boolean&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 23,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [
+        {
+            &quot;name&quot;: &quot;IReactHandle&quot;,
+            &quot;desc&quot;: &quot;This is what is returned when you call [ReactTree.mount], and it\nis used for unmounting with [ReactTree.unmount].&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;key&quot;,
+                    &quot;lua_type&quot;: &quot;number | string&quot;,
+                    &quot;desc&quot;: &quot;The key of the element.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;parent&quot;,
+                    &quot;lua_type&quot;: &quot;Instance?&quot;,
+                    &quot;desc&quot;: &quot;The parent of the element.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;root&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;,
+                    &quot;desc&quot;: &quot;The root of the element. This is the return result of `React.createElement`.&quot;
+                }
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 35,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        }
+    ],
+    &quot;name&quot;: &quot;ReactTree&quot;,
+    &quot;desc&quot;: &quot;A utility library that allows Roact styled mounting and unmounting for React.&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 16,
+        &quot;path&quot;: &quot;src/init.lua&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#IReactHandle" class="table-of-contents__link toc-highlight">IReactHandle</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#StrictValidation" class="table-of-contents__link toc-highlight">StrictValidation</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#mount" class="table-of-contents__link toc-highlight">.mount</a></li><li><a href="#unmount" class="table-of-contents__link toc-highlight">.unmount</a></li><li><a href="#update" class="table-of-contents__link toc-highlight">.update</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 howmanysmall. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/ReactTree/assets/js/runtime~main.4d7f075f.js"></script>
+<script src="/ReactTree/assets/js/main.e64a2d69.js"></script>
+</body>
+</html>
