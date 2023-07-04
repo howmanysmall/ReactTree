@@ -1,0 +1,26 @@
+changelog = true
+gitSourceBranch = "main"
+
+[docusaurus]
+tagline = "Utility library for easier React tree mounting and unmounting."
+
+[[navbar.items]]
+href = "https://discord.gg/nhDpg96Srt"
+label = "Discord"
+position = "right"
+
+[home]
+enabled = true
+includeReadme = false
+
+[[home.features]]
+title = "Replicates Roact"
+description = "This library allows you to more easily replicate Roact's tree mounting and unmounting."
+
+[[home.features]]
+title = "Typed for Luau"
+description = "The codebase is fully typed for Luau."
+
+[[home.features]]
+title = "Less work for you!"
+description = "The standard way of mounting and unmounting in React is such a hassle. This library makes it into a single function call."

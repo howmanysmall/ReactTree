@@ -1,0 +1,30 @@
+[package]
+name = "howmanysmall/react-tree"
+description = "A way to mount your components in the same style as Roact."
+license = "MIT"
+version = "1.0.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = [
+	".gitignore",
+	".moonwave",
+	".styluaignore",
+	".vscode",
+	"aftman.toml",
+	"build",
+	"changelog.md",
+	"docs",
+	"moonwave.toml",
+	"scripts",
+	"selene.toml",
+	"sourcemap.json",
+	"stylua.toml",
+	"test",
+	"testez-companion.toml",
+	"wally.lock",
+]
+
+[dependencies]
+LuauPolyfill = "jsdotlua/luau-polyfill@1.2.3"
+ReactRoblox = "core-packages/react-roblox@17.0.1-rc.19"
+t = "osyrisrblx/t@3.0.0"
