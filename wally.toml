@@ -2,7 +2,7 @@
 name = "howmanysmall/react-tree"
 description = "A way to mount your components in the same style as Roact."
 license = "MIT"
-version = "1.0.0"
+version = "1.0.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = [
@@ -26,5 +26,5 @@ exclude = [
 
 [dependencies]
 LuauPolyfill = "jsdotlua/luau-polyfill@1.2.3"
-ReactRoblox = "core-packages/react-roblox@17.0.1-rc.19"
+ReactRoblox = "jsdotlua/react-roblox@17.0.2"
 t = "osyrisrblx/t@3.0.0"

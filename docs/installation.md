@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ```toml
 [dependencies]
-ReactTree = "howmanysmall/react-tree@^1.0.0"
+ReactTree = "howmanysmall/react-tree@^1.0.1"
 ```
 
 ### Method #2 - HttpService
